@@ -1,0 +1,345 @@
+@hh:3.86rem;
+@fh: 2.96rem;
+body{
+    overflow-x: hidden;
+}
+
+header{
+    height:@hh;
+    font-size:0.96rem;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    background:#339ee2;
+    line-height: @hh;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 1000;
+    .shop-btn{
+        @h:0.48rem;
+        display: inline-block;
+        position: absolute;
+        width: 1.2rem;
+        height: @h;
+        text-align: center;
+        border:0.01rem solid #fff;
+        border-radius: 0.08rem;
+        line-height: @h;
+        color: #fff;
+        top:50%;
+        transform: translateY(-50%);
+        right: 0.15rem;
+    }
+
+    .back-btn{
+        @h:@hh;
+        display: block;
+        position: absolute;
+        width: @h;
+        height: @h;
+        text-align: center;
+        line-height: @h;
+        color: #fff;
+        left: 0;
+    }
+}
+#navBox{
+    margin-top:@hh;
+    overflow: hidden;
+    display:block;
+    height: 1.93rem;
+}
+#navD{
+    float: left;
+    padding:0.25rem 0.7rem 0.22rem;
+    p{
+        font-size:0.88rem;
+        color:#339ee2;
+
+    }
+}
+#bannerImg img{
+    height: 9.54rem;
+    width: 100%;
+}
+.bannerBox{
+    overflow: hidden;
+}
+#detailBan{
+    margin-top:@hh;
+    img{
+        height: 100%;
+    }
+
+}
+#detailH3{
+    color:#333;
+    font-size:1.02rem;
+    line-height: 1.44rem;
+    margin:0.84rem;
+}
+#detailP1{
+    color:#ff5000;
+
+    margin-left:0.93rem;
+    font-size:1.14rem
+}
+#detailPart{
+
+    font-size:0.8rem;
+    margin:0.6rem 0.93rem 4.8rem;
+    color:#992266;
+
+    p{
+        font-size:0.4rem;
+        color:#333
+    }
+}
+
+#select{
+    margin:0.5rem 0;
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    li{
+        float: left;
+        text-align: center;
+        p{
+            line-height: 3rem;
+            font-size:3rem;
+        }
+        div{
+            line-height: 1rem;
+            font-size:0.5rem;
+        }
+        a{
+            p{
+                border-radius: 50%;
+                color:#fff;
+            }
+        }
+        &:nth-child(1){
+                p{
+                    background:#fa5634;
+                }
+        }
+        &:nth-child(2){
+            p{
+                background:#ee2;
+            }
+        }
+        &:nth-child(3){
+            p{
+                background:#ca56fa;
+            }
+        }
+        &:nth-child(4){
+            p{
+                background:#fa9600;
+            }
+        }
+    }
+}
+#detailF{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+}
+.shopDiv{
+    border-bottom:2px #999 solid;
+}
+.detailFoot{
+    float: left;
+    color:#339ee2;
+    width: 3.15rem;
+    text-align: center;
+    border-right: 1px #eee solid;
+    padding:0.48rem 0.05rem;
+    background:#fff;
+}
+#detailPush,#detailBuy{
+    float:left;
+    font:0.96rem/3.15rem "黑体";
+    color:#fff;
+}
+#detailPush{
+    background: #ff9402;
+    padding:0 1.21rem;
+}
+#detailBuy{
+    padding:0 1.71rem;
+    background:#ff5000;
+}
+.main{
+    padding-top:@hh;
+    padding-bottom: @fh;
+
+}
+.shopBox{
+    img{
+        width: 100%;
+    }
+}
+.boutBox{
+    overflow: hidden;
+    div{
+        float: left;
+        width: 50%;
+        text-align: center;
+        padding:0.2rem 0;
+    }
+    img{
+        width: 95%;
+    }
+}
+.goods-list{
+    margin-bottom:2.94rem;
+    li{
+        padding:0.4rem 0.3rem;
+        border-bottom: 1px solid #747474;
+        position: relative;
+
+        .goods-item{
+            display: flex;
+        }
+
+        .img-box{
+            @w: 6.9rem;
+            width: @w;
+            height: @w;
+            overflow: hidden;
+            margin-right:0.6rem;
+
+            img{
+                width: @w;
+                height: auto;
+                display: block;
+            }
+        }
+
+        .content-box{
+            flex: 1;
+            h3{
+                line-height: 0.86rem;
+            }
+
+            .price{
+                margin-top:0.1rem;
+
+                span{
+                    color:#f72a75;
+                    font-size: 0.64rem;
+                    margin-right:0.3rem;
+                }
+
+                del{
+                    color:#aaa ;
+                }
+            }
+        }
+
+        .shopCar-bg(){
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e84274+0,d71552+100 */
+            background: #e84274; /* Old browsers */
+            background: -moz-linear-gradient(top, #e84274 0%, #d71552 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #e84274 0%,#d71552 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #e84274 0%,#d71552 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e84274', endColorstr='#d71552',GradientType=0 ); /* IE6-9 */
+        }
+
+        .shopCar-btn{
+            @h:0.8rem;
+            display: block;
+            width: 1.86rem;
+            height: @h;
+            border-radius: 0.2rem;
+            .shopCar-bg();
+            text-align: center;
+            line-height: @h;
+            position: absolute;
+            right: 0.3rem;
+            bottom: 0.6rem;
+            color: #fff;
+            border:1px solid #e7265f;
+        }
+
+        .shopCar-btn:after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 53%;
+            position: absolute;
+            left: 0;
+            top:0;
+            background: rgba(255,255,255,0.23);
+            border-radius: 0 0 50% 50% e("/") 0 0 0.16rem 0.16rem ;
+        }
+    }
+}
+#myBox{
+     background:#f6f6f6
+}
+#myDiv1{
+    img{
+        width: 100%;
+    }
+}
+#myDiv2{
+    margin-bottom: 3.3rem;
+    ul{
+        margin-bottom:1.2rem;
+        li{
+            line-height: 3.0rem;
+            border-bottom:1px #ccc solid;
+            background:#fff;
+            padding:0 1rem;
+            div{
+                display: inline-block;
+                font-size:1.17rem;
+            }
+            span{
+                float:right;
+                font-size:1.17rem;
+            }
+        }
+    }
+}
+footer{
+    position: fixed;
+    background: #fbfbfb;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    ul{
+        display: flex;
+
+        li{
+            flex: 1;
+
+            a{
+                display: block;
+                height: @fh;
+                text-align: center;
+                color: #a6a5a6;
+                padding-top:0.04rem;
+                box-sizing: border-box;
+
+                &.active{
+                    border-top:0.06rem solid #d3d3d3;
+                    color:#56aee5;
+                }
+
+                .iconfont{
+                    line-height: 1.14rem;
+                    font-size: 0.88rem;
+                }
+            }
+        }
+    }
+}

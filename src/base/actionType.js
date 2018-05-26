@@ -1,0 +1,7 @@
+export const HOME_INIT = "HOME_INIT"
+export const GOODS_INIT = "GOODS_INIT"
+export const DETAIL_INIT = "DETAIL_INIT"
+export const BOUT_INIT = "BOUT_INIT"
+export const SHOP_INIT = "SHOP_INIT"
+export const ESPE_INIT = "ESPE_INIT"
+export const MY_INIT = "MY_INIT"
